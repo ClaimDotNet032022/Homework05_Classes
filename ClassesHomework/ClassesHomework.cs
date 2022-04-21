@@ -14,11 +14,12 @@ namespace ClassesHomework
         // TO BOTTOM
 
         [TestMethod]
-        public void BasicClassWithDefaultConstructor() 
+        public void BasicClassWithDefaultConstructor()
         {
             // Goal 1: Create a dog class in the Dog Class File provided in the project.
             // The class must have at least a default constructor that takes no parameters.
             // Contraints: You are not allowed to change this code, only create the needed types.
+            //User u = new User();
             Dog dog = new Dog();
             Assert.IsTrue(dog is Dog); // the is keyword checks the type of an object.
         }
@@ -119,7 +120,7 @@ namespace ClassesHomework
             // The goal of this is to remind you that controlling who can set your members is valueable.
             // Ill be grading this manually.
 
-            Dog dog = new Dog();
+            //Dog dog = new Dog();
             //dog.Breed = "not able to set"; // This should not compile
             //dog.IsSitting = false; // this should not compile
             //dog.Age = 123; // this should not compile
@@ -193,7 +194,7 @@ namespace ClassesHomework
             Assert.IsTrue(cat.IsSitting == false);
             Assert.IsTrue(cat.Age == 1);
             cat.CelebrateBirthday();
-            Assert.IsTrue(cat.Age == 2);            
+            Assert.IsTrue(cat.Age == 2);
         }
 
         [TestMethod]
@@ -229,7 +230,7 @@ namespace ClassesHomework
             // are within a specific range of each other (in this
             // case, less than 0.00001 apart), they're considered
             // equal, so rounding errors don't throw off the tests.
-            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001); 
+            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001);
 
 
         }
