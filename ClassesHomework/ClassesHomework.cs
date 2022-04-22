@@ -22,7 +22,7 @@ namespace ClassesHomework
             Dog dog = new Dog();
             Assert.IsTrue(dog is Dog); // the is keyword checks the type of an object.
         }
-
+        
         [TestMethod]
         public void SingleParameterConstructorAndProperty()
         {
@@ -32,7 +32,7 @@ namespace ClassesHomework
             Dog collie = new Dog("collie");
             Assert.IsTrue(collie.Breed == "collie");
         }
-
+        
         [TestMethod]
         public void DefaultAgeProperty()
         {
@@ -107,7 +107,7 @@ namespace ClassesHomework
             Assert.IsTrue(airBud.Age == 4);
         }
 
-
+        
         [TestMethod]
         public void Encapsulation()
         {
@@ -119,12 +119,12 @@ namespace ClassesHomework
             // The goal of this is to remind you that controlling who can set your members is valueable.
             // Ill be grading this manually.
 
-            Dog dog = new Dog();
+            //Dog dog = new Dog();
             //dog.Breed = "not able to set"; // This should not compile
             //dog.IsSitting = false; // this should not compile
             //dog.Age = 123; // this should not compile
         }
-
+        
         [TestMethod]
         public void InheritanceDog()
         {
@@ -142,7 +142,7 @@ namespace ClassesHomework
             Assert.IsTrue(parent.Species == "dog");
             Assert.IsTrue(parent != null);
         }
-
+        
         [TestMethod]
         public void InheritanceCat()
         {
@@ -156,7 +156,7 @@ namespace ClassesHomework
             Assert.IsTrue(parentCat.Species == "cat");
             Assert.IsTrue(parentCat != null);
         }
-
+        
         [TestMethod]
         public void PolyMorphism()
         {
@@ -179,7 +179,7 @@ namespace ClassesHomework
             Assert.IsTrue(catAsAnimal.Speak() == "meow!");
 
         }
-
+        
         [TestMethod]
         public void ReapingTheReward()
         {
@@ -195,7 +195,7 @@ namespace ClassesHomework
             cat.CelebrateBirthday();
             Assert.IsTrue(cat.Age == 2);            
         }
-
+        
         [TestMethod]
         public void PettingZoo()
         {
@@ -233,5 +233,6 @@ namespace ClassesHomework
 
 
         }
+        
     }
 }

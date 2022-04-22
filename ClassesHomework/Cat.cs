@@ -6,10 +6,22 @@ using System.Threading.Tasks;
 
 namespace ClassesHomework
 {
-    // Write your Cat class here
-    //class Cat
-    //{
-        
-    //}
+    
+    public class Cat : Animal
+    {
+        public Cat()
+        {
+
+        }
+        public override string Speak()
+        {
+            return "meow!";
+        }
+        public override string Species { get; set; } = "cat";
+       
+    }
+    
+
+
 
 }

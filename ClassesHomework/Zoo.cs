@@ -11,42 +11,42 @@ namespace ClassesHomework
     // don't change any code in this file.
 
 
-    //class Zoo
-    //{
+    class Zoo
+    {
 
-    //    private Dictionary<string, Animal> _myAnimals = new Dictionary<string, Animal>();
-    //    public string Name { get; } 
-    //    public Zoo(string zooName)
-    //    {
-    //        Name = zooName;
-    //    }
+        private Dictionary<string, Animal> _myAnimals = new Dictionary<string, Animal>();
+        public string Name { get; }
+        public Zoo(string zooName)
+        {
+            Name = zooName;
+        }
 
-    //    public void AddAnimal(string name, Animal anim)
-    //    {
-    //        _myAnimals.Add(name, anim);
-    //    }
+        public void AddAnimal(string name, Animal anim)
+        {
+            _myAnimals.Add(name, anim);
+        }
 
-    //    public void SpeakNOW()
-    //    {
-    //        foreach(KeyValuePair<string, Animal> kvp in _myAnimals)
-    //        {
-    //            Console.WriteLine($"{kvp.Key} says {kvp.Value.Speak()}");
-    //        }
-    //    }
+        public void SpeakNOW()
+        {
+            foreach (KeyValuePair<string, Animal> kvp in _myAnimals)
+            {
+                Console.WriteLine($"{kvp.Key} says {kvp.Value.Speak()}");
+            }
+        }
 
-    //    public double GetAverageAge()
-    //    {
-    //        if (_myAnimals.Count == 0)
-    //        {
-    //            return 0;
-    //        }
+        public double GetAverageAge()
+        {
+            if (_myAnimals.Count == 0)
+            {
+                return 0;
+            }
 
-    //        int sum = 0;
-    //        foreach(KeyValuePair<string, Animal> kvp in _myAnimals)
-    //        {
-    //            sum += kvp.Value.Age;
-    //        }
-    //        return (double)sum / _myAnimals.Count;
-    //    }
-    //}
+            int sum = 0;
+            foreach (KeyValuePair<string, Animal> kvp in _myAnimals)
+            {
+                sum += kvp.Value.Age;
+            }
+            return (double)sum / _myAnimals.Count;
+        }
+    }
 }
