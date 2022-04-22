@@ -51,8 +51,8 @@ namespace ClassesHomework
             return "What am I?";
         }
         public virtual string Species { get; set; } = "unknown";
-        public string Breed { get; private set; }
-        public int Age { get; private set; } = 1;
+        public string Breed { get; set; }
+        public int Age { get; set; } = 1;
         public bool IsSitting { get; set; } = false;
 
     }
