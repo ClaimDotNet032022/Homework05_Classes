@@ -98,7 +98,7 @@ namespace ClassesHomework
         [TestMethod]
         public void CelebrateBirthday()
         {
-            // Goal 1: Extend your Dog class to support a method Named CelebrateBirthday(), which takes no arguments, but interanally increases the age of the dog.
+            // Goal 1: Extend your Dog class to support a method Named CelebrateBirthday(), which takes no arguments, but internally increases the age of the dog.
             // Contraints: You are not allowed to change this code, only extend the type you already created.
             Dog airBud = new Dog("golden retriever", 2);
             airBud.CelebrateBirthday();
@@ -193,7 +193,7 @@ namespace ClassesHomework
             Assert.IsTrue(cat.IsSitting == false);
             Assert.IsTrue(cat.Age == 1);
             cat.CelebrateBirthday();
-            Assert.IsTrue(cat.Age == 2);            
+            Assert.IsTrue(cat.Age == 2);
         }
 
         [TestMethod]
@@ -229,7 +229,7 @@ namespace ClassesHomework
             // are within a specific range of each other (in this
             // case, less than 0.00001 apart), they're considered
             // equal, so rounding errors don't throw off the tests.
-            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001); 
+            Assert.AreEqual(3.0, zoo.GetAverageAge(), 0.00001);
 
 
         }
